@@ -253,7 +253,7 @@
 	bitesize = 5
 	foodtype = VEGETABLES
 	tastes = list("almond" = 1)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
 	//Almonds keep for around eighteen months without preservation, so no rotting here.
 
 /obj/item/reagent_containers/food/snacks/grown/almond/On_Consume(mob/living/eater)
