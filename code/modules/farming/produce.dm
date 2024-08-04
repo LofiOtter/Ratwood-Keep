@@ -250,10 +250,10 @@
 	desc = ""
 	icon_state = "almond"
 	filling_color = "#EB8921"
-	bitesize = 5
+	bitesize = 4
 	foodtype = VEGETABLES
 	tastes = list("almond" = 1)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	//Almonds keep for around eighteen months without preservation, so no rotting here.
 
 /obj/item/reagent_containers/food/snacks/grown/almond/On_Consume(mob/living/eater)
