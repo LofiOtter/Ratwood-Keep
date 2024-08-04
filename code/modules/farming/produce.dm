@@ -93,6 +93,21 @@
 	var/equippedloc = null
 	var/list/bitten_names = list()
 
+/obj/item/reagent_containers/food/snacks/grown/pear
+	seed = /obj/item/seeds/pear
+	name = "pear"
+	desc = ""
+	icon_state = "pear"
+	filling_color = "#D1E231"
+	bitesize = 3
+	foodtype = FRUIT
+	tastes = list("pear" = 1)
+	trash = /obj/item/trash/pearcore
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	rotprocess = 20 MINUTES
+	can_distill = TRUE
+	distill_reagent = /datum/reagent/consumable/ethanol/beer/cider
+
 /obj/item/reagent_containers/food/snacks/grown/apple/On_Consume(mob/living/eater)
 	..()
 	if(ishuman(eater))
@@ -180,6 +195,83 @@
 	list_reagents = list(/datum/reagent/berrypoison = 5, /datum/reagent/consumable/nutriment = 3)
 	grind_results = list(/datum/reagent/berrypoison = 5)
 	color_index = "bad"
+
+/obj/item/reagent_containers/food/snacks/grown/cabbage
+	seed = /obj/item/seeds/cabbage
+	name = "cabbage"
+	desc = ""
+	icon_state = "cabbage"
+	filling_color = "#76A75D"
+	bitesize = 3
+	foodtype = VEGETABLES
+	tastes = list("cabbage" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	rotprocess = 15 MINUTES
+
+/obj/item/reagent_containers/food/snacks/grown/onion
+	seed = /obj/item/seeds/onion
+	name = "onion"
+	desc = ""
+	icon_state = "onion"
+	filling_color = "#F6DCE9"
+	bitesize = 3
+	foodtype = VEGETABLES
+	tastes = list("onion" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	rotprocess = 15 MINUTES
+
+/obj/item/reagent_containers/food/snacks/grown/carrot
+	seed = /obj/item/seeds/carrot
+	name = "carrot"
+	desc = ""
+	icon_state = "carrot"
+	filling_color = "#EB8921"
+	bitesize = 3
+	foodtype = VEGETABLES
+	tastes = list("carrot" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	rotprocess = 15 MINUTES
+
+/obj/item/reagent_containers/food/snacks/grown/radish
+	seed = /obj/item/seeds/radish
+	name = "radish"
+	desc = ""
+	icon_state = "radish"
+	filling_color = "#EB8921"
+	bitesize = 3
+	foodtype = VEGETABLES
+	tastes = list("radish" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	rotprocess = 15 MINUTES
+
+/obj/item/reagent_containers/food/snacks/grown/almond
+	seed = /obj/item/seeds/almond
+	name = "bunch of almonds"
+	desc = ""
+	icon_state = "almond"
+	filling_color = "#EB8921"
+	bitesize = 5
+	foodtype = VEGETABLES
+	tastes = list("almond" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	//Almonds keep for around eighteen months without preservation, so no rotting here.
+
+/obj/item/reagent_containers/food/snacks/grown/almond/On_Consume(mob/living/eater)
+	..()
+	update_icon()
+
+/obj/item/reagent_containers/food/snacks/grown/almond/update_icon()
+	cut_overlays()
+	var/used_state = "almondc5"
+	if(bitecount == 1)
+		used_state = "almondc4"
+	if(bitecount == 2)
+		used_state = "almondc3"
+	if(bitecount == 3)
+		used_state = "almondc2"
+	if(bitecount == 4)
+		used_state = "almondc1"
+	var/image/item_overlay = image(used_state)
 
 /obj/item/reagent_containers/food/snacks/grown/rogue/sweetleaf
 	seed = /obj/item/seeds/sweetleaf
