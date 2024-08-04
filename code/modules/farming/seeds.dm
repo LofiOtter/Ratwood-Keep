@@ -89,3 +89,30 @@
 	seed_identity = "berry seeds"
 	plant_def_type = /datum/plant_def/berry_poison
 
+/obj/item/seeds/cabbage
+	seed_identity = "cabbage seeds"
+	plant_def_type = /datum/plant_def/cabbage
+
+/obj/item/seeds/onion
+	seed_identity = "onion seeds"
+	plant_def_type = /datum/plant_def/onion
+
+/obj/item/seeds/carrot
+	seed_identity = "carrot seeds"
+	plant_def_type = /datum/plant_def/carrot
+
+/obj/item/seeds/radish
+	seed_identity = "radish seeds"
+	plant_def_type = /datum/plant_def/radish
+
+/obj/item/seeds/pear
+	seed_identity = "pear seeds"
+	plant_def_type = /datum/plant_def/pear
+
+/obj/item/seeds/walnut
+	seed_identity = "walnut seeds"
+	plant_def_type = /datum/plant_def/walnut
+
+/obj/item/seeds/almond
+	seed_identity = "almond seeds"
+	plant_def_type = /datum/plant_def/almond
