@@ -78,6 +78,83 @@
 	maturation_time = 6 MINUTES
 	produce_time = 3 MINUTES
 
+/datum/plant_def/pear
+	name = "pear tree"
+	icon = 'icons/roguetown/misc/crops.dmi'
+	icon_state = "pear"
+	produce_type = /obj/item/reagent_containers/food/snacks/grown/pear
+	uproot_loot = list(/obj/item/grown/log/tree/small)
+	perennial = TRUE
+	produce_amount_min = 2
+	produce_amount_max = 3
+	maturation_nutrition = 60
+	produce_nutrition =  30
+	maturation_time = 6 MINUTES
+	produce_time = 3 MINUTES
+
+/datum/plant_def/almond
+	name = "almond tree"
+	icon = 'icons/roguetown/misc/crops.dmi'
+	icon_state = "almond"
+	produce_type = /obj/item/reagent_containers/food/snacks/grown/almond
+	uproot_loot = list(/obj/item/grown/log/tree/small)
+	perennial = TRUE
+	produce_amount_min = 2
+	produce_amount_max = 3
+	maturation_nutrition = 60
+	produce_nutrition =  35
+	maturation_time = 6 MINUTES
+	produce_time = 3 MINUTES
+	water_drain_rate = 1 / (2 MINUTES)
+
+/datum/plant_def/cabbage
+	name = "cabbage patch"
+	icon = 'icons/roguetown/misc/crops.dmi'
+	icon_state = "cabbage"
+	produce_type = /obj/item/reagent_containers/food/snacks/grown/cabbage
+	produce_amount_min = 2
+	produce_amount_max = 3
+	maturation_nutrition = 25
+	produce_nutrition =  15
+	maturation_time = 4 MINUTES
+	produce_time = 2 MINUTES
+
+/datum/plant_def/onion
+	name = "onion patch"
+	icon = 'icons/roguetown/misc/crops.dmi'
+	icon_state = "onion"
+	produce_type = /obj/item/reagent_containers/food/snacks/grown/onion
+	produce_amount_min = 2
+	produce_amount_max = 3
+	maturation_nutrition = 25
+	produce_nutrition =  15
+	maturation_time = 4 MINUTES
+	produce_time = 2 MINUTES
+
+/datum/plant_def/carrot
+	name = "carrot patch"
+	icon = 'icons/roguetown/misc/crops.dmi'
+	icon_state = "carrot"
+	produce_type = /obj/item/reagent_containers/food/snacks/grown/carrot
+	produce_amount_min = 2
+	produce_amount_max = 3
+	maturation_nutrition = 25
+	produce_nutrition =  15
+	maturation_time = 4 MINUTES
+	produce_time = 2 MINUTES
+
+/datum/plant_def/radish
+	name = "radish patch"
+	icon = 'icons/roguetown/misc/crops.dmi'
+	icon_state = "radish"
+	produce_type = /obj/item/reagent_containers/food/snacks/grown/radish
+	produce_amount_min = 2
+	produce_amount_max = 3
+	maturation_nutrition = 25
+	produce_nutrition =  15
+	maturation_time = 4 MINUTES
+	produce_time = 2 MINUTES
+
 /datum/plant_def/pipeweed
 	name = "westleach leaf"
 	icon = 'icons/roguetown/misc/crops.dmi'
